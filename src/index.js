@@ -1,7 +1,7 @@
 import { GLTFLoader } from '../node_modules/three/examples/jsm/loaders/GLTFLoader';
 import * as THREE from 'three';
 import * as OrbitControls from 'three-orbitcontrols';
-import { light2, light3, light4 } from './direct_light.js';
+import { light2, light3, light4, light5 } from './direct_light.js';
 import {gltfLoader2} from './loader'
 
 export const scene = new THREE.Scene();
@@ -20,6 +20,7 @@ scene.add(light3);
 scene.add(light3.target);
 scene.add(light4);
 scene.add(light4.target);
+scene.add(light5);
 
 
 
@@ -30,6 +31,7 @@ const controls = new OrbitControls( camera, renderer.domElement );
 
 
 controls.update();
+
 controls.autoRotate=false;
 const clock= new THREE.Clock();
 
@@ -42,5 +44,6 @@ const animate = function () {
     controls.update();
     
 };
+
 
 animate();

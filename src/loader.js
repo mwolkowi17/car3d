@@ -2,7 +2,7 @@ import { GLTFLoader } from '../node_modules/three/examples/jsm/loaders/GLTFLoade
 import * as THREE from 'three';
 import {scene} from './index'
 
-const gltfLoader2 = new GLTFLoader()
+export const gltfLoader2 = new GLTFLoader()
     gltfLoader2.load('./scene.gltf', (gltf) => {
       const root = gltf.scene;
       //const anim = gltf.animations;
@@ -13,6 +13,6 @@ const gltfLoader2 = new GLTFLoader()
 
       //action = mixer.clipAction( anim[ 0 ] )
       //action.play();
-
+     
      
     })
