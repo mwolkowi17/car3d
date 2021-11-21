@@ -55,8 +55,16 @@
     visibility:hidden;
 }
 
+.progressContainer{
+position: absolute;
+width:100%;
+height: 70px;
+margin-top: 30%;
+text-align: center;
+}
+
 .progressInfo{
-    position:absolute;
+   
     top: 20px;
     color: white;
     visibility: hidden;
