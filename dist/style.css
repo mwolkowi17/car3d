@@ -54,3 +54,11 @@
     float: left;
     visibility:hidden;
 }
+
+.progressInfo{
+    position:absolute;
+    top: 20px;
+    color: white;
+    visibility: hidden;
+
+}

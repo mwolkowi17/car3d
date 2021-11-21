@@ -13,7 +13,7 @@ renderer.shadowMap.enabled = true;
 
 document.body.appendChild(renderer.domElement);
 
-scene.background = new THREE.Color(0x000000);
+//scene.background = new THREE.Color(0x000000);
 
 scene.add(light2);
 scene.add(light2.target);
