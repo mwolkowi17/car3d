@@ -1,22 +1,11 @@
 import { GLTFLoader } from '../node_modules/three/examples/jsm/loaders/GLTFLoader';
-import * as THREE from 'three';
 import {scene} from './index'
 
-/*const onProgress = function ( xhr ) {
-  if ( xhr.lengthComputable ) {
-    var percentComplete = xhr.loaded / xhr.total * 100;
-    console.log( Math.round(percentComplete, 2) + '% downloaded' );
-  }
-};*/
+
  function Progress(){
    console.log('loading');
    const progressInfo=document.getElementsByClassName('progressInfo')[0];
    progressInfo.style.visibility = 'visible';
-   /*progressInfo.className='progressInfo';
-   progressInfo.textContent = 'loading';
-   progressInfo.style.color = 'white';
-   progressInfo.style.backgroundColor='red';*/
-  
  }
 
 export const gltfLoader2 = new GLTFLoader()
